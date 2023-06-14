@@ -1,11 +1,11 @@
 import './globals.css'
 import Navbar from './components/Navbar'
-
+import Portrait from './components/Portrait'
 
 
 export const metadata = {
   title: 'Mini Blog',
-  description: 'Next tut mini blog',
+  description: 'Next tut mini blog lol',
 }
 
 export default function RootLayout({
@@ -15,8 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-slate-800">
-      <Navbar />
+      <body className="dark:bg-slate-800">
+        <Navbar />
+        <Portrait />
         {children}
       </body>
     </html>
